@@ -15,6 +15,7 @@ namespace Great.Services
         public void Start()
         {
             Console.WriteLine("Start");
+            LogWrapper.Log.Info("Test");
         }
 
         public void Stop()

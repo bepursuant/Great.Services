@@ -11,6 +11,8 @@ namespace Great.Services
         
         static void Main(string[] args)
         {
+            LogWrapper.Configure();
+
             TopShelfWrapper.Configure();
 
             Console.WriteLine("Test");
