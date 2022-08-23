@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Great.Services
 {
@@ -16,6 +12,7 @@ namespace Great.Services
         {
             Console.WriteLine("Start");
             LogWrapper.Log.Info("Test");
+            LogWrapper.Log.Info("Settings are as follows: IsGreat={IsGreat}, ShoutOutsTo={ShoutOutsTo}", ConfigWrapper.Config.IsGreat, ConfigWrapper.Config.ShoutOutsTo);
         }
 
         public void Stop()
